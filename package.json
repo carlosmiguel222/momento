@@ -11,7 +11,8 @@
     "publish": "git subtree push --prefix live origin gh-pages",
     "localhost": "ssh -R 80:localhost:3000 ssh.localhost.run",
     "deploy": "gh-pages -d live",
-    "deploy:debug": "NODE_DEBUG=gh-pages npm run deploy"
+    "deploy:debug": "NODE_DEBUG=gh-pages npm run deploy",
+     "clean": "rimraf node_modules package-lock.json"
   },
   "keywords": [],
   "author": "",
@@ -23,18 +24,18 @@
     "ansi": "^0.3.1",
     "browser-sync": "^2.29.3",
     "cross-env": "^7.0.3",
-    "del": "^8.0.2",
+    "del": "^6.1.1",
     "dotenv": "^16.4.7",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-import": "^2.29.0",
     "eslint-plugin-prettier": "^5.2.3",
     "gh-pages": "^6.3.0",
     "gulp": "^5.0.0",
-    "gulp-autoprefixer": "^9.0.1",
+    "gulp-autoprefixer": "^8.0.0",
     "gulp-babel": "^8.0.0",
-    "gulp-clone": "^2.0.2",
+    "gulp-clone": "^1.0.0",
     "gulp-concat": "^2.6.1",
-    "gulp-eslint": "^7.0.0",
+    "gulp-eslint": "^6.0.0",
     "gulp-if": "^3.0.0",
     "gulp-jsbeautifier": "^3.0.1",
     "gulp-pug": "^5.0.0",
@@ -62,4 +63,3 @@
     "last 5 version"
   ]
 }
-
